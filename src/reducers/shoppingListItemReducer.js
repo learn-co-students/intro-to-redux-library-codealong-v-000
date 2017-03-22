@@ -9,6 +9,6 @@ export default function shoppingListItemReducer(state = {items: []}, action) {
      return proposedstate;
     default:
       console.log(state)
-      return state;
+      return state
   }
 }
