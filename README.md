@@ -106,7 +106,7 @@ Now, refresh your app, and give it a shot.  You should see the correct action be
 
 #### Incorporating Redux DevTools
 
-There is this amazing piece of software that allows us to nicely view the state of our store and each action that is dispatched.  The software does a lot more than that.  I'll let you read about it here: (redux-devtools-extension)[https://github.com/zalmoxisus/redux-devtools-extension].  Ok, so let's get to incorporating this.  In fact, every time we use the redux library going forward, we should make sure we incorporate devtools.  Otherwise, you are flying blind.
+There is this amazing piece of software that allows us to nicely view the state of our store and each action that is dispatched.  The software does a lot more than that.  I'll let you read about it here: [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).  Ok, so let's get to incorporating this.  In fact, every time we use the redux library going forward, we should make sure we incorporate devtools.  Otherwise, you are flying blind.
 
 First, just google for redux devtools chrome.  There you will find the chrome extension for redux.  Please download it, and refresh chrome.  You will know that you have installed the extension if you go to your developer console in google (press command+shift+c to pull it up), and then at the top bar you will see a couple of arrows.  Click those arrows, and if you see redux as your dropdown, you properly installed the chrome extension. Step one is done.
 
