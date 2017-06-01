@@ -10,7 +10,7 @@ In the previous units, we have been building using a createStore method that we 
 
 Now let's think about which part of our application would belong in the official redux library -- that is, which part of our codebase would be common to all applications.  Well, probably not the reducer as our reducers seem unique to each react-redux application.  The reducers are unique because sometimes we have reducers that would add or remove items, or add or remove users, or edit users, etc.  What these actions are and how the reducer manages the state is customized.  Thus, the reducer would not be part of the redux library that other developers would use to build their application.   
 
-The createStore, method however is generic across redux applications.  It always return a store (given a reducer) that will have a dispatch method and a getState method.  
+The createStore method, however, is generic across redux applications.  It always returns a store (given a reducer) that will have a dispatch method and a getState method.  
 
 So from now on, we will import our createStore method from the official redux library.  Normally, to install redux into a react application, you simply need to run `npm install redux --save`.  But here we have already installed it for you.  Clone down this repo and run `npm install` to get started.
 
