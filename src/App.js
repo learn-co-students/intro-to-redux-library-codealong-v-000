@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={(event)=> this.handleOnClick(event)}>Click</button>
-      </div>
       <p>
       {this.props.store.getState().items.length}
       </p>
