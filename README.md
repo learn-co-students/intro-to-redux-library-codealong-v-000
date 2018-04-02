@@ -5,7 +5,7 @@
 * Use the `createStore()` method provided by the redux library.
 
 ## Introduction
-
+s
 In the previous units, we have been building using a __createStore()__ method that we wrote, and passing a reducer to it. We have been using the __dispatch__ method from the store, to dispatch actions and update the state.
 
 Now let's think about which part of our application would belong in the official Redux library -- that is, which part of our codebase would be common to all applications. Well, probably not the reducer as our reducers seem unique to each React & Redux application.  The reducers are unique because sometimes we have reducers that would add or remove items, or add or remove users, or edit users, etc. What these actions are and how the reducer manages the state is customized. Thus, the reducer would not be part of the redux library that other developers would use to build their application.   
@@ -35,7 +35,7 @@ import './index.css';
 const store = createStore(shoppingListItemReducer); /* code change */
 
 ReactDOM.render(
-  <App store={store} />, /* code change */ 
+  <App store={store} />, /* code change */
   document.getElementById('root')
 );
 ```
@@ -52,7 +52,7 @@ export default function shoppingListItemReducer(state = {
 
     case 'INCREASE_COUNT':
       return state.items.concat(state.items.length + 1);
-      
+
     default:
       return state;
   }
@@ -83,7 +83,7 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={(event) => this.handleOnClick(event)} >
-          Click 
+          Click
         </button>
         <p>{this.props.store.getState().items.length}</p>
       </div>
@@ -134,7 +134,7 @@ First, just Google for Redux Devtools Chrome. There you will find the Chrome ext
 Second, we need to tell our application to communicate with this extension. Doing so is pretty easy.  Now we change the arguments to our createStore method to the following:
 
 ```javascript
-// ./src/index.js 
+// ./src/index.js
 
 import React from 'react';
 import ReactDOM from 'react-dom';
