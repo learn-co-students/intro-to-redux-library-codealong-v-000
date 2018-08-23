@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//---- Importing from Redux  library ----//
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'; /* code change */
+//---- Importing handmade reducer ----//
 import shoppingListItemReducer from './reducers/shoppingListItemReducer.js';
 import App from './App';
 import './index.css';
 
-const store = createStore(shoppingListItemReducer);
+// tell our application to use the  Redux Devtools Chrome extension in Google Chrome
+//with 'window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()'//
+
+const store = createStore(shoppingListItemReducer,
+window.__REDUX_DEVTOOLS_EXTENSION__ &&
+window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, 
+  <App store={store} />,
   document.getElementById('root')
 );
