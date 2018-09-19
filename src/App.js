@@ -7,10 +7,12 @@ class App extends Component {
 		this.props.increaseCount();
 	};
 
+	debugger
 	render() {
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
+				
 				<p>{this.props.items.length}</p>
 			</div>
 		);
