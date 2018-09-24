@@ -25,7 +25,7 @@ getState method.
 
 So from now on, we will import our **createStore()** method from the official
 Redux library. Normally, to install Redux into a React application, you need to
-install two packages, `redux` and `react-redux` by running `npm install redux && npm install react-redux`. These are already included in this lesson's
+install two packages, `` and `react-redux` by running `npm install redux && npm install react-redux`. These are already included in this lesson's
 `package.json` file, so all you need to do is run `npm install && npm start` to
 get started.
 
