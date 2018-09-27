@@ -4,7 +4,7 @@
 
 - Use the `createStore()` method provided by the redux library.
 
-## Introduction
+## Lecture//Introduction
 
 In the previous section, we have been building using a **createStore()** method
 that we wrote, and passing a reducer to it. We have been using the **dispatch**
