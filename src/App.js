@@ -17,12 +17,14 @@ class App extends Component {
 	}
 }
 
+// this functions allows access to items via props across the application
 const mapStateToProps = state => {
 	return {
 		items: state.items
 	}
 };
 
+// this functions allows access to increaseCount via props across the application
 const mapDispatchToProps = dispatch => {
 	return {
 		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
