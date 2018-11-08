@@ -10,7 +10,7 @@ const store = createStore(shoppingListItemReducer);
 
 ReactDOM.render(
   <Provider store={store}>
-        {' '}
+        {'Hello! '}
   <App />,
   </Provider> /* code change */,
   document.getElementById('root')
