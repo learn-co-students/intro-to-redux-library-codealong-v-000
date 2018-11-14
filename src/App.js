@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 
-class App extends Component {
+class Button extends Component {
 	handleOnClick = event => {
 		this.props.increaseCount();
 	};
@@ -29,7 +29,9 @@ const mapDispatchToProps = dispatch => {
 	};
 };
 
-export default connect(
+const App = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(App);
+)(Button)
+
+export default App;
