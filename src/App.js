@@ -7,14 +7,14 @@ class App extends Component {
 		this.props.increaseCount();
 	};
 
-	render() {
-		return (
-			<div className="App">
-				<button onClick={this.handleOnClick}>Click</button>
-				<p>{this.props.items.length}</p>
-			</div>
-		);
-	}
+    render() {
+        return (
+            <div className="App">
+                <button onClick={this.handleOnClick}>Click</button>
+                <p>{this.props.items.length}</p>
+            </div>
+        );
+		}
 }
 
 const mapStateToProps = state => {
