@@ -12,13 +12,12 @@ import './index.css';
 const store = createStore(
     shoppingListItemReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-); /* code change */
+);
+
 
 ReactDOM.render(
     <Provider store={store}>
-        {' '}
-        /* code change */
-        <App />
-    </Provider> /* code change */,
+      <App />
+    </Provider>, /* code change */
     document.getElementById('root')
-);
+  );
