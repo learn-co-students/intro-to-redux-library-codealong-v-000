@@ -11,7 +11,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
-				<p>{this.props.items.length}</p>
+				{console.log(this.props.items)}
+				<p>{this.props.items}</p>
 			</div>
 		);
 	}
@@ -25,7 +26,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
+		increaseCount: () => {
+			dispatch({ type: 'INCREASE_COUNT' })
+		}
 	};
 };
 
