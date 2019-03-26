@@ -14,12 +14,10 @@ const store = createStore(
 );
 
 
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
-/*ReactDOM.render(
+//ReactDOM.render(<App store={store} />, document.getElementById('root'));
+ReactDOM.render(
     <Provider store={store}>
-        {' '};
         <App />
     </Provider>,
     document.getElementById('root')
 );
-*/
