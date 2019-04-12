@@ -4,7 +4,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'; /* code change */
 import shoppingListItemReducer from './reducers/shoppingListItemReducer.js';
+import {Provider} from 'react-redux';
 import App from './App';
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(shoppingListItemReducer);
+ReactDOM.render(
+    <Provider store={store}>
+        {' '}
+        <App />
+    </Provider>, document.getElementById('root'));
