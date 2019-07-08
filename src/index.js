@@ -7,4 +7,15 @@ import shoppingListItemReducer from './reducers/shoppingListItemReducer.js';
 import App from './App';
 import './index.css';
 
+const store = createStore(shoppingListItemReducer); /* code change */
+
 ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+    <Provider store={store}>
+        {' '}
+        /* code change */
+        <App />
+    </Provider> /* code change */,
+    document.getElementById('root')
+);
