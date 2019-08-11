@@ -3,9 +3,11 @@ import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
-	handleOnClick = event => {
-		this.props.increaseCount();
-	};
+	handleOnClick () {
+		this.props.dispatch({
+			type: 'INCREASE_COUNT',
+		});
+	}
 
 	render() {
 		return (
@@ -17,19 +19,11 @@ class App extends Component {
 	}
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
 	return {
 		items: state.items
 	};
 };
 
-const mapDispatchToProps = dispatch => {
-	return {
-		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
-	};
-};
 
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(App);
+export default connect(mapStateToProps)(App);
