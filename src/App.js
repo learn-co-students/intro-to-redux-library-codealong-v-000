@@ -7,7 +7,7 @@ class App extends Component {
 		this.props.increaseCount();
 	};
 
-	render() {
+render() {
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
