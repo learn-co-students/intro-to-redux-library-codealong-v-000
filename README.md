@@ -134,7 +134,7 @@ This `store` value is then passed in as a prop to `Provider`.
 
 To gain access to the `store` somewhere in our app, we use a second function
 provided by `react-redux`, `connect`. By modifying a component's export
-statement and included `connect`, we are able to take data from our **Redux**
+statement and including `connect`, we are able to take data from our **Redux**
 store and map them to a component's props. Similarly, we can _also_ take
 actions, and by wrapping them in a dispatch and an anonymous function, be able
 pass them as props as well:
