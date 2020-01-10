@@ -4,6 +4,7 @@
 
 - Use the `createStore()` method provided by the redux library.
 
+
 ## Introduction
 
 In the previous section, we have been building using a **createStore()** method
