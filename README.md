@@ -1,5 +1,11 @@
 # Intro to Redux: Reading Data from State
 
+## Cool Graphics
+Here is a schematic of what's going on in this lab.  Redux specific methods are shown in purple as opposed to React methods which are blue.  A proper symbol legend will be provided at a later lab.
+<a href="https://imgur.com/tuSk03K"><img src="https://i.imgur.com/tuSk03K.jpg" title="source: imgur.com" /></a>
+
+
+
 ## Objectives
 
 - Use the `createStore()` method provided by the redux library.
