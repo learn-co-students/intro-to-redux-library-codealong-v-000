@@ -4,6 +4,7 @@ export default function shoppingListItemReducer(
 	},
 	action
 ) {
+	console.log(action)
 	switch (action.type) {
 		case 'INCREASE_COUNT':
 			return {
